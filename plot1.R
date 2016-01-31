@@ -3,7 +3,7 @@
 ## Author: Tad Shimada
 ## Description:
 ## - This script attempts to show whether or not the total emissions from PM2.5
-## descreased in the United States from 1999 to 2008. It generates a line plot
+## decreased in the United States from 1999 to 2008. It generates a line plot
 ## and saves it in PNG file called 'plot1.png' in the same directory where
 ## the script resides.
 #################################################################################
@@ -32,7 +32,8 @@ png(filename = "plot1.png", width = 480, height = 480, units = "px")
 
 # plot line graph with dot for each year (type = "o" with dot style (19))
 # xaxt = "n" is to tell not to auto-label x-axis.
-plot(d$Year, d$Total.Emissions/1000,
+plot(d$Year,
+    d$Total.Emissions/1000, # just to make the values more understandable
     main = "Total Emission in the United States (1999-2008)", # plot's main title
     xlab = "Year", # x-axis label
     ylab = "Total Emission (in thousand tons)", # y-axis label
