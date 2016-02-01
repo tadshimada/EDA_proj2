@@ -44,7 +44,7 @@ names(balpm25)[3] <- c("total.emissions")
 # use qplot (ggplot2) to generate the line graph showing the total emission changes
 # from 1999 to 2008 for each source type.
 p <- qplot(year, total.emissions, data = balpm25, geom = c("point", "line"), facets = . ~ type,
-    main = "Total Emissions in Baltimore City, MD (1999-2008) by Souce Type",
+    main = "Total Emissions in Baltimore City, MD (1999-2008) by Source Type",
     ylab = "Total Emission (in tons)")
 
 # save the plot into 960 x 480 PNG file (plot3.png).
