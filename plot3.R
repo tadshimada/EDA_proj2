@@ -8,6 +8,8 @@
 ## For plotting, the script uses qplot (ggplot2) as required by the assignment.
 ##################################################################################
 
+library(ggplot2)
+
 # the data file should exist in the same directory where this R script is
 # stored and executed.
 NEI <- readRDS("./summarySCC_PM25.rds")
